@@ -2,7 +2,7 @@
   <img src="frontend/public/favicon.svg" width="120" height="120" alt="Code Arena Logo" />
   <h1 style="font-family: monospace;">CODE ARENA</h1>
   
-  <p><b>Real-time collaborative IDE and distributed execution engine with an 8-bit retro aesthetic.</b></p>
+  <p><b>Real-time collaborative IDE and distributed execution engine.</b></p>
 
   [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
   [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](#)
