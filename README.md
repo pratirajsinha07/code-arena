@@ -4,17 +4,10 @@
   <p><b>Real-time, competitive programming collaboration in 8-bit.</b></p>
 </div>
 
----
-
-<!-- 📸 UI SCREENSHOT PLACEHOLDER -->
-> [!NOTE]
-> *(Insert a clean screenshot of the retro "Code Arena" IDE interface here)*
-
----
 
 Code Arena is a real-time, competitive programming platform that brings developers together in isolated virtual rooms to collaborate, write code, and instantly test logic against a robust backend execution engine. Featuring an immersive 8-bit retro aesthetic, it perfectly blends modern collaborative engineering with a classic arcade feel.
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Frontend**: React (Vite), Framer Motion, Monaco Editor, Xterm.js
 - **Real-Time Engine**: Yjs (CRDTs), `y-websocket`
@@ -22,7 +15,7 @@ Code Arena is a real-time, competitive programming platform that brings develope
 - **Execution Engine**: BullMQ, Dockerode, Redis
 - **Infrastructure**: Redis (Pub/Sub & Queueing), Docker
 
-## 🧠 Architecture Overview
+##  Architecture Overview
 
 Code Arena operates on a highly decoupled microservices architecture designed for real-time collaboration and secure, isolated execution:
 
@@ -30,7 +23,7 @@ Code Arena operates on a highly decoupled microservices architecture designed fo
 - **Decoupled Execution Pipeline**: When a user clicks "Run Code", the API Gateway submits a payload to a **BullMQ** queue backed by Redis. The independent **Worker Engine** pulls the job, spins up an ephemeral, isolated **Docker container**, injects the code and standard input, executes the compiled binary, and streams the standard output back to the client via Redis Pub/Sub.
 - **Instant AC/WA Evaluation**: The frontend instantly parses the incoming output stream, stripping ANSI codes and matching the precise output against expected test cases to yield real-time Accepted or Wrong Answer badges.
 
-## 🏃 Local Setup
+## Local Setup
 
 ### Prerequisites
 - Node.js (v18+)
@@ -80,7 +73,7 @@ npm run dev
 
 Navigate to `http://localhost:5173` in your browser. Create an account, spin up a new room, and start coding!
 
-## 🚀 Cloud Deployment Note
+##  Cloud Deployment Note
 
 If you are looking to deploy this platform to the cloud for a live portfolio piece:
 
