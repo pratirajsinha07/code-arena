@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# IDE and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# Docker
+.docker/
+docker-compose.override.yml
